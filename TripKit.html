@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>TripKit</title>
+    <script type="text/javascript">
+    var key = (window.location.hostname == 'localhost') ?
+    'ABQIAAAAB5EMLNLcl9tsZ4hqbawAfxT2yXp_ZAY8_ufC3CFXhHIE1NvwkxRoJDDhIBUBHMI3ctykDpDZ3ysiyQ' :
+    'ABQIAAAAB5EMLNLcl9tsZ4hqbawAfxTojtPCGbCR6k6fpOPXijLOggT5wxQ34BymadwahkYI7Kawdmg9tB5rKw';
+    document.write('<script type="text/javascript" ' +
+		   'src="http://www.google.com/jsapi?key=' + key + '"></sc'+'ript>');
+    </script>
+    <script type="text/javascript">
+    google.load('maps', '2');
+    google.load('jquery', '1.3.2');
+    </script>
+    <script src="trip.js"></script>
+    <script src="TripKit.js"></script>
+    <style type="text/css">
+    body {
+      border: 0;
+      margin: 0;
+      padding: 0;
+    }
+    #sidebar {
+      width: 250px;
+      float: left;
+      height: 100%
+    }
+    #map_canvas {
+      margin-left: 250px;
+      height: 100%;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="sidebar">
+    </div>
+    <div id="map_canvas"></div>
+    </div>
+  </body>
+</html> 
